@@ -7,6 +7,6 @@ CREATE TABLE animals(
   	date_of_birth DATE,
   	escape_attempts INT,
   	neutered BIT,
-	weight_kg DECIMAL(3, 2)
+	weight_kg DECIMAL(4, 2)
   PRIMARY KEY(id)
 );
