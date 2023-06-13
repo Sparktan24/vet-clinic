@@ -26,7 +26,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -133,16 +132,6 @@ I would like to thank my Microverse Team and partners for helping me to get this
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-- **Can I use the project for any purpose?**
-
-  - Yes, you can use and modify this project for anything you wish as long as you give the corresponding credit.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
