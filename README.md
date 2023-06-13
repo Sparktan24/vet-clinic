@@ -67,7 +67,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
+- **[Filter using queries]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +103,7 @@ Run the queries to create the database and table.
 
 ## 🔭 Future Features <a name="future-features"></a>.
 
-- [ ] **[new_feature_1]**
+- [ ] **[UI connection]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,11 +137,9 @@ I would like to thank my Microverse Team and partners for helping me to get this
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **Can I use the project for any purpose?**
 
-- **[Question_1]**
-
-  - [Answer_1]
+  - Yes, you can use and modify this project for anything you wish as long as you give the corresponding credit.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
