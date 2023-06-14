@@ -122,13 +122,11 @@ ORDER BY escape_count DESC;
 /* What is the minimum and maximum weight of each type of animal?*/
 SELECT species, MIN(WEIGHT_KG) AS Min_weight, MAX(WEIGHT_KG) AS Max_weight 
 FROM animals
-WHERE species = 'digimon' OR species = 'pokemon'
 GROUP BY species;
 
 /* What is the average number of escape attempts per animal type of those born 
 between 1990 and 2000?*/
 SELECT species, AVG(escape_attempts) AS avg_escape_attempts
 FROM animals
-WHERE (species = 'digimon' OR species = 'pokemon') 
-AND (date_of_birth > '1990-01-01' AND date_of_birth < '2000-12-31')
+WHERE (date_of_birth > '1990-01-01' AND date_of_birth < '2000-12-31')
 GROUP BY species;
