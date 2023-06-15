@@ -14,3 +14,49 @@ VALUES 	('Charmander', '2020-02-08', 0, 0::bit, -11.00),
 		('Boarmon', '2005-06-07', 7, 1::bit, 20.40),
 		('Blossom', '1998-10-13', 3, 1::bit, 17.00),
 		('Ditto', '2022-05-14', 4, 1::bit, 22.00);
+
+
+/* insert the following data into the owners*/
+INSERT INTO owners (full_name, age)
+VALUES 	('Sam Smith', 34),
+		('Jennifer Orwell', 19),
+		('Bob', 45),
+		('Melody Pond', 77),
+		('Dean Winchester', 14),
+		('Jodie Whittaker', 38);
+
+/* insert data into the species*/
+INSERT INTO species (name)
+VALUES 	('Pokemon'),
+		('Digimon');
+		
+/* modify your inserted animals so it includes the species_id value:
+If the name ends in "mon" it will be Digimon
+All other animals are Pokemon*/
+UPDATE animals
+SET species_id = (SELECT id FROM species WHERE name = 'Digimon')
+WHERE name LIKE '%mon';
+
+UPDATE animals
+SET species_id = (SELECT id FROM species WHERE name = 'Pokemon')
+WHERE species_id IS NULL;
+
+UPDATE animals										/* id = 3*/
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Sam Smith')
+WHERE name = 'Agumon'
+
+UPDATE animals										/* id = 4*/
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
+WHERE name IN ('Gabumon', 'Pikachu');
+
+UPDATE animals										/* id = 5*/
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Bob')
+WHERE name IN ('Devimon', 'Plantmon');
+
+UPDATE animals										/* id = 6*/
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Melody Pond')
+WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
+
+UPDATE animals										/* id = 7*/
+SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
+WHERE name IN ('Angemon', 'Boarmon');
