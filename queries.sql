@@ -158,6 +158,12 @@ FROM species s
 JOIN animals a ON s.id = a.species_id
 GROUP BY s.name;
 
+/* List all Digimon owned by Jennifer Orwell.*/
+SELECT full_name AS owner_name, name AS animal_name
+FROM owners o
+JOIN animals a ON o.id = a.owner_id
+WHERE o.full_name = 'Jennifer Orwell';
+
 /* List all animals owned by Dean Winchester that haven't tried to escape.*/
 SELECT full_name AS owner_name, name AS animal_name
 FROM owners o
