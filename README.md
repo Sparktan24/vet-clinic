@@ -1,6 +1,6 @@
 # VET_CLINIC
-
-
+# Schema of vet-clinic database
+![My Image](Vet_Clinic_schema.png)
 
 ## Table Of Contents
 
